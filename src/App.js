@@ -1,9 +1,10 @@
 import "./App.css";
+import Header from "./components/header";
 
 function App() {
   return (
-    <div className="App bg-teal-500 h-screen flex justify-center items-center text-white">
-      Yaaaay, Tailwind works
+    <div className="App">
+      <Header />
     </div>
   );
 }
