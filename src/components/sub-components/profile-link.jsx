@@ -1,7 +1,7 @@
 import React from "react";
 const ProfileLink = () => {
   return (
-    <div className="flex mx-4 cursor-pointer hover:text-gray-700">
+    <div className="flex mx-4 cursor-pointer hover:text-gray-700 justify-center mt-2 md:mt-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 mx-1"

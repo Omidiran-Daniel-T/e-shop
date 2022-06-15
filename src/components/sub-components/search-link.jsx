@@ -1,7 +1,7 @@
 import React from "react";
 const SearchLink = () => {
   return (
-    <div className="ml-16 cursor-pointer hover:text-gray-700">
+    <div className="md:ml-16 cursor-pointer hover:text-gray-700 flex justify-center mt-2 md:mt-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
