@@ -4,3 +4,11 @@
 .active-nav:hover {
   color: #4b93ec;
 }
+.active-sub-nav {
+  color: #60a5f7;
+  border-bottom: 4px solid #60a5f7;
+}
+.active-sub-nav:hover {
+  color: #4b93ec;
+  border-bottom: 4px solid #4b93ec;
+}

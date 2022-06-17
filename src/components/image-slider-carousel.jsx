@@ -42,9 +42,9 @@ const ImageSlider = ({ data }) => {
           </div>
         ))}
       </Carousel>
-      <div className="bg-red-00 px-2 md:flex justify-center z-0">
+      <div className="bg-red-00 px-2 md:flex justify-center z-0 my-10">
         <div className="bg-red-400 text-white w-96 px-5 py-5 md:flex md:h-80 items-center">
-          <div className="w-3/5">
+          <div className="md:w-3/5">
             <div className="text-lg">IPhone 7</div>
             <div className="text-xs py-8">
               Lorem ipsum is placeholder text commonly used in the graphic,
@@ -53,9 +53,9 @@ const ImageSlider = ({ data }) => {
             </div>
             <div className="text-md">$399</div>
           </div>
-          <div className="w-2/5">
+          <div className="md:w-2/5">
             <img
-              src="http://assets.stickpng.com/images/585fd18fcb11b227491c35d3.png"
+              src="https://www.pngall.com/wp-content/uploads/5/Apple-iPad-PNG-Free-Download.png"
               alt="sd1"
               className="h-80 md:h-40"
             />
@@ -63,11 +63,7 @@ const ImageSlider = ({ data }) => {
         </div>
         <div className="bg-gray-300 text-gray-800 w-96 md:h-80">
           <div className="px-5 py-5">
-            <img
-              src="http://assets.stickpng.com/images/587549af1063eb350d61bef4.png"
-              alt="sd2"
-              className="h-80 md:h-60"
-            />
+            <img src={PhoneImage} alt="sd2" className="h-80 md:h-60" />
             <div className="font-semibold flex justify-between px-5">
               <div className="text-lg">Oculus Rift</div>
               <div className="text-lg">$349</div>

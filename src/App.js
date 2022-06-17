@@ -5,6 +5,7 @@ import TopNav from "./components/top-navBar";
 import ImageSlider from "./components/image-slider-carousel";
 
 import PhoneImage from "./images/iPhone-11-PNG-Transparent-HD-Photo.png";
+import BestSeller from "./components/bestSeller";
 
 function App() {
   const data = [
@@ -29,9 +30,7 @@ function App() {
       <Header />
       <TopNav />
       <ImageSlider data={data} />
-      <section className="bg-red-00 text-2xl py-5 my-5 text-center">
-        BEST SELLER
-      </section>
+      <BestSeller />
     </div>
   );
 }
