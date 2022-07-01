@@ -20,7 +20,7 @@ const ImageSlider = ({ data }) => {
       >
         {data.map((m) => (
           <div
-            className="bg-gradient-to-r from-pink-500 to-purple-500 md:flex sm:px-10 md:px-20 my-10 py-10 md:h-screen z-0"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 md:flex sm:px-10 md:px-20 my-10 py-10 md:pb-10 md:h-screen z-0"
             key={m.title}
           >
             <div className="bg-blue-00 text-white flex flex-col justify-center items-center px-5 md:px-10 py-20">
@@ -37,13 +37,13 @@ const ImageSlider = ({ data }) => {
               </div>
             </div>
             <div className="bg-yellow-00 md:pt-20">
-              <img src={m.imageSrc} alt="phone" />
+              <img src={m.imageSrc} alt="phone" className="h-80 md:h-full" />
             </div>
           </div>
         ))}
       </Carousel>
-      <div className="bg-red-00 px-2 md:flex justify-center z-0 my-10">
-        <div className="bg-red-400 text-white w-96 px-5 py-5 md:flex md:h-80 items-center">
+      <div className="bg-red-00 px-2 md:flex justify-center z-0 my-10 ">
+        <div className="bg-red-400 text-white w-96 px-5 py-5 md:flex md:h-80 items-center m-auto md:m-0">
           <div className="md:w-3/5">
             <div className="text-lg">IPhone 7</div>
             <div className="text-xs py-8">
@@ -61,7 +61,7 @@ const ImageSlider = ({ data }) => {
             />
           </div>
         </div>
-        <div className="bg-gray-300 text-gray-800 w-96 md:h-80">
+        <div className="bg-gray-300 text-gray-800 w-96 md:h-80 m-auto md:m-0">
           <div className="px-5 py-5">
             <img src={PhoneImage} alt="sd2" className="h-80 md:h-60" />
             <div className="font-semibold flex justify-between px-5">
@@ -70,7 +70,7 @@ const ImageSlider = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="bg-gray-400 px-5 py-5 w-96 md:h-80 md:flex">
+        <div className="bg-gray-400 px-5 py-5 w-96 md:h-80 md:flex m-auto md:m-0">
           <div className="md:w-3/5">
             <div className="text-lg">Go Pro 6</div>
             <div className="text-xs py-8">
