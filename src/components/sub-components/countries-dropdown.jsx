@@ -43,7 +43,7 @@ const Countries = () => {
           <></>
         ) : (
           <ul
-            className="bg-gray-0 w-60 top-10 absolute h-80 overflow-auto rounded-b-lg pb-2 shadow-xl"
+            className="bg-white z-40 w-60 top-10 absolute h-80 overflow-auto rounded-b-lg pb-2 shadow-xl"
             ref={countryRef}
           >
             {getCountries().map((c) => (

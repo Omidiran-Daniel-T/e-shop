@@ -43,7 +43,7 @@ const Currency = () => {
           <></>
         ) : (
           <ul
-            className="bg-gray-0 w-60 top-10 absolute h-80 overflow-auto rounded-b-lg pb-2 shadow-xl"
+            className="bg-white w-60 top-10 absolute h-80 overflow-auto rounded-b-lg pb-2 shadow-xl z-40"
             ref={currencyRef}
           >
             {getCurrencies().map((c) => (

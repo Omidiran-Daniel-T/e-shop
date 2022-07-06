@@ -9,6 +9,8 @@ import BestSeller from "./components/bestSeller";
 import Ads from "./components/ads";
 import Services from "./components/services";
 import Footer from "./components/footer";
+import { Route, Routes } from "react-router-dom";
+import Cart from "./components/cart";
 
 function App() {
   const data = [
@@ -32,10 +34,21 @@ function App() {
     <div className="App">
       <Header />
       <TopNav />
-      <ImageSlider data={data} />
-      <BestSeller />
-      <Ads />
-      <Services />
+      <Routes>
+        <Route path="/cart" element={<Cart />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <ImageSlider data={data} />
+              <BestSeller />
+              <Ads />
+              <Services />
+            </>
+          }
+        />
+      </Routes>
       <Footer />
     </div>
   );
