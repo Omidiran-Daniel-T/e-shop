@@ -11,6 +11,7 @@ import Services from "./components/services";
 import Footer from "./components/footer";
 import { Route, Routes } from "react-router-dom";
 import Cart from "./components/cart";
+import Product from "./components/product";
 
 function App() {
   const data = [
@@ -35,6 +36,7 @@ function App() {
       <Header />
       <TopNav />
       <Routes>
+        <Route path="/product" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route
           exact
